@@ -1,0 +1,24 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "first-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon first-app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhcoder/NodeJs_Lab_Funix.git"
+  },
+  "author": "Minh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhcoder/NodeJs_Lab_Funix/issues"
+  },
+  "homepage": "https://github.com/minhcoder/NodeJs_Lab_Funix#readme",
+  "dependencies": {
+    "nodemon": "1.18.3"
+  }
+}
