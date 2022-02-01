@@ -1,6 +1,14 @@
-const http = require('http')
-const express = require('express')
-const app = express()
+const http = require('http');
+const express= require('express');
+const app =express()
+
+app.use((req,res,next)=>{
+    console.log('In the Middleware')
+    next();
+})
+app.use((req,res,next)=>{
+    console.log('In the other Middleware')
+})
 
 
 const server = http.createServer(app)
