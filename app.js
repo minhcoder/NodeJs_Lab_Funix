@@ -4,7 +4,8 @@ const port = 3000
 const path = require('path')
 const bodyParser = require('body-parser')
 const errorController = require('./controllers/error');
-
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
@@ -12,8 +13,6 @@ app.set('views', 'views')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
-const adminRoutes = require('./routes/admin');
-const shopRoutes = require('./routes/shop');
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
